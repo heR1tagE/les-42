@@ -9,18 +9,21 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+        >
           Home
         </NavLink>
         <NavLink
           to="/about"
-          className={({ isActive }) => (isActive ? "active" : "")}
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
         >
           About
         </NavLink>
         <NavLink
           to="/contact"
-          className={({ isActive }) => (isActive ? "active" : "")}
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
         >
           Contact
         </NavLink>
